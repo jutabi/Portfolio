@@ -20,7 +20,7 @@ html, body {
 }
 
 .parallax {
-    background: url("../items/img/포폴배경.jpg") fixed;
+    background: url("../items/img/포폴배경nooutline.jpg") fixed;
     /*background-image: url("auto(1).jpg");*/
     /*background-attachment: fixed;*/
 }
