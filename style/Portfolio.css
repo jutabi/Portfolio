@@ -89,6 +89,22 @@ li {
     height: auto;
     margin: auto auto;
 }
+h2 {
+    color: lightgreen;
+}
+a:link {
+    text-decoration: none;
+    color: deepskyblue;
+}
+a:visited {
+    color: lightcoral;
+}
+/*a:active {*/
+/*    color: white;*/
+/*}*/
+a:hover {
+    color: lightpink;
+}
 
 /*!* section *!*/
 /*#section1 {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);}*/
@@ -119,6 +135,6 @@ li {
     background-size: cover;
 }
 #section6 {
-    background: url("../items/img/background/back-(6).JPG") fixed no-repeat center;
+    background: url("../items/img/background/back-(6).jpg") fixed no-repeat center;
     background-size: cover;
 }
