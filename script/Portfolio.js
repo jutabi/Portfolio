@@ -45,6 +45,10 @@ $(window).scroll(function(){
         nav.removeClass("active");
         nav.eq(5).addClass("active");
     }
+    if(wScroll >= contents.eq(6).offset().top){
+        nav.removeClass("active");
+        nav.eq(6).addClass("active");
+    }
 });
 
 
