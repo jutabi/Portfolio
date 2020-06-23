@@ -49,6 +49,18 @@ $(window).scroll(function(){
         nav.removeClass("active");
         nav.eq(6).addClass("active");
     }
+    if(wScroll >= contents.eq(7).offset().top){
+        nav.removeClass("active");
+        nav.eq(7).addClass("active");
+    }
+    if(wScroll >= contents.eq(8).offset().top){
+        nav.removeClass("active");
+        nav.eq(8).addClass("active");
+    }
+    if(wScroll >= contents.eq(9).offset().top){
+        nav.removeClass("active");
+        nav.eq(9).addClass("active");
+    }
 });
 
 

@@ -113,7 +113,10 @@ a:hover {
 /*#section4 {background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}*/
 /*#section5 {background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);}*/
 /*#section6 {background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}*/
-
+#section0 {
+    background: url("../items/img/background/back0.jpg") fixed no-repeat center;
+    background-size: cover;
+}
 #section1 {
     background: url("../items/img/background/back1.jpg") fixed no-repeat center;
     background-size: cover;
@@ -140,5 +143,13 @@ a:hover {
 }
 #section7 {
     background: url("../items/img/background/back7.jpg") fixed no-repeat center;
+    background-size: cover;
+}
+#section8 {
+    background: url("../items/img/background/back8.jpg") fixed no-repeat center;
+    background-size: cover;
+ }
+#section9 {
+    background: url("../items/img/background/back9.jpg") fixed no-repeat center;
     background-size: cover;
 }
