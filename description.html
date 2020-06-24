@@ -50,7 +50,7 @@
                 <a href="https://github.com/mckaydev/Signboard" target="_blank">
                     ->프로젝트 GitHub
                 </a> <br>
-                <a href="https://jutabi.tistory.com" target="_blank">
+                <a href="https://jutabi.tistory.com/category/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EA%B0%84%ED%8C%90%20%EA%B2%80%EC%83%89%EA%B8%B0%20-%20%EA%B0%9C%EB%B0%9C%20%EC%9D%BC%EC%A7%80" target="_blank">
                     ->개발 일지 블로그
                 </a>
             </div>
@@ -79,10 +79,10 @@
                 <h2>수행 내용</h2> <br>
                 <p>
                     이용자가 간판 사진을 업로드하면 간판 사진을 tesseract를 이용해 OCR하여 상호명을 가져옵니다.
-                    그리고 사진의 EXIF 정보 중 GPS정보를 가져온 뒤, GPS 정보와 상호명을 이용하여 가게를
-                    검색하고 정보를 크롤링합니다. </p>
+                    그리고 사진의 EXIF 정보 중 GPS정보를 가져온 뒤, GPS 정보와 상호명, 네이버 지도 API를 이용하여
+                    가게를 검색하고 정보를 받아옵니다. </p>
                 <p>
-                    크롤링한 데이터를 검색 결과 뷰 안에 배치하는데 그 정보에는 메뉴, 가게 평점, 전화번호 등의
+                    받아온 데이터를 검색 결과 뷰 안에 배치하는데 그 정보에는 메뉴, 가게 평점, 전화번호 등의
                     가게의 상세 정보들이 포함됩니다. </p> <br>
 
                 <p>상세 수행 내용</p> <br>
@@ -121,7 +121,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>EC2 </td> <td>t2.micro</td>
+                        <td>AWS EC2 </td> <td>t2.micro</td>
                         <td>maven </td> <td></td>
                         <td>tess4j </td> <td>4.5.1</td>
                     </tr>
