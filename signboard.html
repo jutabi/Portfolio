@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>개인 프로젝트 설명</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        @font-face {
+            font-family: 'MaplestoryOTFLight';
+            src: url('./MaplestoryOTFLight.eot?#iefix') format('embedded-opentype'), /* IE 6 ~8 */
+            url("./MaplestoryOTFLight.woff2")format('woff2'), /* chrome */
+            url('./MaplestoryOTFLight.otf')  format('opentype'),
+            url('./MaplestoryOTFLight.woff') format('woff'), /* 모던 브라우저 */
+            url('./MaplestoryOTFLight.ttf')  format('truetype'),
+            url('./MaplestoryOTFLight.svg#MaplestoryOTFLight') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin:0;
+            box-sizing: content-box;
+            font-family: "MaplestoryOTFLight", serif;
+        }
+        li {
+            list-style: none;
+        }
+
+        /* dot */
+        #dot {
+            position: fixed;
+            right:20px;
+            top: 50%;
+            transform: translatey(-50%);
+        }
+        #dot li a {
+            position: relative;
+            width: 15px;
+            height: 15px;
+            border-radius:50%;
+            margin:8px;
+            background-color:rgba(255,255,255,0.5);
+            display: block;
+        }
+        #dot li a em {
+            opacity: 0;
+            position: absolute;
+            right: 37px;
+            top:-7px;
+            background: rgba(0,0,0,0.55);
+            color:#fff;
+            padding: 8px 14px 5px 14px;
+            display:block;
+            transition: all 0.1s ease;
+            /*opacity: 0;*/
+        }
+        #dot li a em:after {
+            content:'';
+            position: absolute;
+            right:-5px;
+            top:9px;
+            border-left: 5px solid rgba(0,0,0,0.55);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        #dot li.active a {
+            background-color:rgba(255,255,255,1);
+            position: relative;
+        }
+        #dot li.active a em {
+            opacity: 1;
+            right: 27px;
+            /*opacity: 1;*/
+        }
+
+        /* contents */
+        #contents {
+            font-size: 40px;
+            color:#fff;
+            text-align: center;
+        }
+        #contents > div {
+            height: 100vh;
+            /*line-height: 100vh;*/
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+        }
+
+        .container > div {
+            width: auto;
+            height: auto;
+            margin: auto auto;
+        }
+        h2 {
+            color: lightgreen;
+        }
+        a:link {
+            text-decoration: none;
+            color: deepskyblue;
+        }
+        a:visited {
+            color: lightcoral;
+        }
+        /*a:active {*/
+        /*    color: white;*/
+        /*}*/
+        a:hover {
+            color: lightpink;
+        }
+
+        /*!* section *!*/
+        /*#section1 {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);}*/
+        /*#section2 {background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);}*/
+        /*#section3 {background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);}*/
+        /*#section4 {background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}*/
+        /*#section5 {background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);}*/
+        /*#section6 {background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}*/
+
+        #section0 {
+            background: url("./back0.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section1 {
+            background: url("./back1.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section2 {
+            background: url("./back2.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section3 {
+            background: url("./back3.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section4 {
+            background: url("./back4.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section5 {
+            background: url("./back5.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section6 {
+            background: url("./back6.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section7 {
+            background: url("./back7.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section8 {
+            background: url("./back8.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        #section9 {
+            background: url("./back9.jpg") fixed no-repeat center;
+            background-size: cover;
+        }
+        img {
+            height: 80vh;
+        }
+        h2 {
+            color: white;
+        }
+        table td {
+            width: 10vw;
+        }
+        td:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+        .container div p {
+            width: 80vw;
+            text-align: justify
+        }
+    </style>
+</head>
+<body>
+<nav id="dot">
+    <ul>
+        <li><a href="#"><em>Intro</em></a></li>
+        <li><a href="#"><em>Outline</em></a></li>
+        <li><a href="#"><em>Action Content</em></a></li>
+        <li><a href="#"><em>Effectiveness</em></a></li>
+        <li><a href="#"><em>Tools used</em></a></li>
+        <li><a href="#"><em>Milestone</em></a></li>
+        <li><a href="#"><em>Architecture</em></a></li>
+        <li><a href="#"><em>UseCase</em></a></li>
+        <li><a href="#"><em>Sequence</em></a></li>
+        <li><a href="#"><em>Demonstration</em></a></li>
+    </ul>
+</nav>
+
+<section id="contents">
+    <div id="section0">
+        <div class="container">
+            <div class="sec0">
+                <h2>간판 검색기</h2> <br>
+                <a href="http://jutabi.com" target="_blank">
+                    ->프로젝트 링크
+                </a> <br>
+                <a href="https://github.com/mckaydev/Signboard" target="_blank">
+                    ->프로젝트 GitHub
+                </a> <br>
+                <a href="https://jutabi.tistory.com/category/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EA%B0%84%ED%8C%90%20%EA%B2%80%EC%83%89%EA%B8%B0%20-%20%EA%B0%9C%EB%B0%9C%20%EC%9D%BC%EC%A7%80" target="_blank">
+                    ->개발 일지
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="section1">
+        <div class="container">
+            <div class="sec1">
+                <h2>프로젝트 개요</h2> <br>
+                <p>가. 추진 목적 및 필요성</p> <br>
+                <p>
+                    TV에서 외국인들이 우리나라에 정착하거나 여행하는 주제를 가진 프로그램들이
+                    많이 나오고 있는데 내용 중에서 애로사항이 되는 것은 한국어를 잘 알지 못하는 외국인들이 가게의
+                    간판을 보고 어떠한 목적을 가진 가게인지를 모른다는 것입니다. 저는 그 문제에서 착안하여 간판
+                    사진을 외국인들이 찍어 업로드하면 그 가게의 정보를 표현해주는 기능을 구현하려고 합니다</p> <br>
+                <p>나. 추진 목표</p> <br>
+                <p>
+                    기본은 웹페이지를 이용하여 사진을 업로드하면 가게의 정보를 제공하는 것이며 어플리케이션으로도
+                    구현하여 오프라인 배달의 민족을 구현하는 것이 목표입니다.</p>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="container">
+            <div class="sec2">
+                <h2>수행 내용</h2> <br>
+                <p>
+                    이용자가 간판 사진을 업로드하면 간판 사진을 tesseract를 이용해 OCR하여 상호명을 가져옵니다.
+                    그리고 사진의 EXIF 정보 중 GPS정보를 가져온 뒤, GPS 정보와 상호명, 네이버 지도 API를 이용하여
+                    가게를 검색하고 정보를 받아옵니다. </p>
+                <p>
+                    받아온 데이터를 검색 결과 뷰 안에 배치하는데 그 정보에는 메뉴, 가게 평점, 전화번호 등의
+                    가게의 상세 정보들이 포함됩니다. </p> <br>
+
+                <p>상세 수행 내용</p> <br>
+                <p>
+                    - 간판을 검색할 시 간판을 제외한 주변까지 OCR되어 사진 내의 간판 위치만을 OCR 할 수 있도록
+                    사용자는 사진을 업로드하면 간판의 위치를 지정하는 Crop을 수행합니다.</p>
+                <p>
+                    - 로그인 기능을 구현합니다.</p>
+                <p>
+                    + 로그인 한 사용자는 검색기록을 확인 할 수 있으며 원하는 가게를 즐겨찾기 페이지에 추가할 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="container">
+            <div class="sec3">
+                <h2>기대 효과</h2> <br>
+                <p>
+                    외국인들 이외에도 국내 여행을 다니는 여행객들도 서비스 이용자에 포함 될 수 있습니다.
+                <p>
+                    점주들에게 로열티를 받고 가게의 상세 정보를 포함하거나 광고를 추가하여 수익창출이 가능합니다.</p>
+                <p>
+                    이용자들의 평점 기능을 추가하여 식사 메뉴를 고민하는 사람들에게 주변의 가게를 소개해줄 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <div class="container">
+            <div class="sec4">
+                <h2>사용한 도구들</h2> <br>
+                <table border="1">
+                    <thead>
+                    <tr bgcolor="#add8e6">
+                        <th>이름</th> <th>버전</th> <th>이름</th> <th>버전</th> <th>이름</th> <th>버전</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>AWS EC2 </td> <td>t2.micro</td>
+                        <td>maven </td> <td></td>
+                        <td>tess4j </td> <td>4.5.1</td>
+                    </tr>
+                    <tr>
+                        <td>tomcat </td> <td>9.0.31</td>
+                        <td>OpenJDK </td> <td>1.8.0_221</td>
+                        <td>Jackson </td> <td>2.11.0</td>
+                    </tr>
+                    <tr>
+                        <td>Spring </td> <td>5.2.3</td>
+                        <td>MySQL </td> <td>8.0.20</td>
+                        <td>Mybatis </td> <td>3.5.4</td>
+                    </tr>
+                    <tr>
+                        <td>commons-fileupload </td> <td>1.4</td>
+                        <td>commons-io </td> <td>2.5</td>
+                        <td></td> <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="section5">
+        <div class="container">
+            <div class="sec5">
+                <h2>프로그램 진척도</h2>
+                <img src="./Milestone.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="section6">
+        <div class="container">
+            <div class="sec76">
+                <h2>System architecture</h2>
+                <img style="height: 90vh" src="./SignboardArchitecture.png">
+            </div>
+        </div>
+    </div>
+    <div id="section7">
+        <div class="container">
+            <div class="sec7">
+                <h2>UseCase Diagram</h2>
+                <img src="./SignboardUseCase.png">
+            </div>
+        </div>
+    </div>
+    <div id="section8">
+        <div class="container">
+            <div class="sec8">
+                <h2>Sequence Diagram (간판 검색시)</h2>
+                <img src="./SignboardSequence.png">
+            </div>
+        </div>
+    </div>
+    <div id="section9">
+        <div class="container">
+            <div class="sec9">
+                <h2>시연 영상</h2> <br>
+                <!--                <iframe title="'jutabi's develop a..'에서 업로드한 동영상" width="960" height="540"-->
+                <!--                        src="https://play-tv.kakao.com/embed/player/cliplink/410047636?service=kakao_tv"-->
+                <!--                        allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe>-->
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/2P5oUB-kIFI"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    let nav = $("#dot ul li");
+    let contents = $("#contents > div");
+
+    nav.click(function(e){
+        e.preventDefault();
+        let target = $(this);
+        let index = target.index();
+        let section = contents.eq(index);
+        let offset = section.offset().top;
+
+        $("html,body").animate({
+                scrollTop: offset},
+            600,
+            "easeInOutExpo");
+        // $('html, body').animate({
+        //     scrollTop: $('.container').offset().top
+        // }, 'fast');
+    });
+
+
+    $(window).scroll(function(){
+        var wScroll = $(this).scrollTop();
+
+        if(wScroll >= contents.eq(0).offset().top){
+            nav.removeClass("active");
+            nav.eq(0).addClass("active");
+        }
+        if(wScroll >= contents.eq(1).offset().top){
+            nav.removeClass("active");
+            nav.eq(1).addClass("active");
+        }
+        if(wScroll >= contents.eq(2).offset().top){
+            nav.removeClass("active");
+            nav.eq(2).addClass("active");
+        }
+        if(wScroll >= contents.eq(3).offset().top){
+            nav.removeClass("active");
+            nav.eq(3).addClass("active");
+        }
+        if(wScroll >= contents.eq(4).offset().top){
+            nav.removeClass("active");
+            nav.eq(4).addClass("active");
+        }
+        if(wScroll >= contents.eq(5).offset().top){
+            nav.removeClass("active");
+            nav.eq(5).addClass("active");
+        }
+        if(wScroll >= contents.eq(6).offset().top){
+            nav.removeClass("active");
+            nav.eq(6).addClass("active");
+        }
+        if(wScroll >= contents.eq(7).offset().top){
+            nav.removeClass("active");
+            nav.eq(7).addClass("active");
+        }
+        if(wScroll >= contents.eq(8).offset().top){
+            nav.removeClass("active");
+            nav.eq(8).addClass("active");
+        }
+        if(wScroll >= contents.eq(9).offset().top){
+            nav.removeClass("active");
+            nav.eq(9).addClass("active");
+        }
+    });
+
+
+    $(document).on("ready", function () {
+        $("#contents > div").each(function () {
+            // mousewheel: 크롬 익스 사파리 오페라
+            // DOMMouseScroll: 파이어폭스
+            // 두개의 이벤트를 동시에 수행하는 on을 사용
+            $(this).on("mousewheel DOMMouseScroll", function (event) {
+                let delta = 0;
+                let moveTop = null;
+                let boxMax = $("#contents > div").length - 1;
+
+                if (event) {
+                    event = window.event;
+                }
+
+                if (event.wheelDelta) {
+                    // mousewheel은
+                    // 휠을 내릴 떄 -120 반환
+                    // 휠을 올릴 때 120 반환
+                    // 그래서 1이나 -1로 반환하도록 / 120
+                    delta = event.wheelDelta / 120;
+                    if(window.opera) {
+                        delta = -delta;
+                    }
+                }
+                else if (window.detail) {
+                    // 파이어폭스의 속성
+                    // 휠을 내릴 때 3 반환
+                    // 휠을 올릴 때 -3 반환
+                    // 위의 delta값과 부호와 수가 다름. 그래서 1로 만들도록
+                    // - 하고 나누기 3
+                    delta = -event.detail / 3;
+                }
+
+                if (delta < 0) {
+                    if ($(this).index() < boxMax) {
+                        if($(this).next() !== undefined) {
+                            moveTop = $(this).next().offset().top;
+                        }
+                    }
+                    else {
+                        // alert("마지막 페이지 입니다");
+                        return false;
+                    }
+                }
+                else {
+                    if ($(this).index() > 0) {
+                        if ($(this).prev() !== undefined) {
+                            moveTop = $(this).prev().offset().top;
+                        }
+                    }
+                    else {
+                        // alert("첫번째 페이지 입니다");
+                        return false;
+                    }
+                }
+                $("html, body").stop().animate({
+                        scrollTop: moveTop + "px"},
+                    {
+                        duration: 600,
+                        complete: function () {}
+                    });
+            });
+        });
+    });
+</script>
+</body>
+</html>
