@@ -27,15 +27,10 @@
 <nav id="dot">
     <ul>
         <li><a href="#"><em>Intro</em></a></li>
-        <li><a href="#"><em>Outline</em></a></li>
+        <li><a href="#"><em>Demonstration</em></a></li>
         <li><a href="#"><em>Action Content</em></a></li>
         <li><a href="#"><em>Effectiveness</em></a></li>
         <li><a href="#"><em>Tools used</em></a></li>
-        <li><a href="#"><em>Milestone</em></a></li>
-        <li><a href="#"><em>Architecture</em></a></li>
-        <li><a href="#"><em>UseCase</em></a></li>
-        <li><a href="#"><em>Sequence</em></a></li>
-        <li><a href="#"><em>Demonstration</em></a></li>
     </ul>
 </nav>
 
@@ -47,14 +42,12 @@
             </div>
         </div>
     </div>
-    <div id="section1">
+    <div id="section9">
         <div class="container">
-            <div class="sec1">
-                <h2>프로젝트 개요</h2> <br>
-                <p>가. 추진 목적 및 필요성</p> <br>
-                <p></p> <br>
-                <p>나. 추진 목표</p> <br>
-                <p></p>
+            <div class="sec9">
+                <h2>시연 영상</h2> <br>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/EJKas4CegIs"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -62,13 +55,16 @@
         <div class="container">
             <div class="sec2">
                 <h2>수행 내용</h2> <br>
-                <p></p>
-                <p></p> <br>
-
-                <p>상세 수행 내용</p> <br>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>- 식물체 추출 기술 개발 : 상단과 측면에서 획득된 식물체 영상에서 배경 분리
+                    프로그램 개발
+                <p> <br>
+                    - 식물체 영상에서 연관 정보 수집 기술 개발 : 추출된 식물체 영상에서 면적,
+                    높이, 너비, 각도 등 단위 데이터 수치화 프로그램 개발
+                </p> <br>
+                <p>
+                    - 수치 데이터 일괄처리 및 관리 기술 개발 : 추출된 식물체의 수치데이터로부터
+                    평균, 표준편차, 통계처리 프로그램 개발
+                </p>
             </div>
         </div>
     </div>
@@ -76,9 +72,28 @@
         <div class="container">
             <div class="sec3">
                 <h2>기대 효과</h2> <br>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h3>기술적 측면</h3>
+                <p>
+                    ○ 벼 생육특성 및 형질별 표현체의 대량분석을 위한 영상처리기반 구축</p>
+                <p>
+                    ○ 딥러닝 기술의 적용으로 국제적인 표현체 분석 기술의 확보</p>
+                <p>
+                    ○ 표현체 영상 빅데이터 처리를 통한 표현체 정보의 가시화 기술력 확보</p>
+                <p>
+                    ○ 웹기반 영상분석 프로그램의 개발을 통해 표현체 연구의 공간적인 제약을 완화</p>
+                <p>
+                    ○ 표현체 영상으로부터 다양한 정보의 추출기술 확보를 통해 미래지향적 정보추출 기반 확보</p><br>
+                <h3>경제적, 산업적 측면</h3>
+                <p>
+                    ○ 비정형 영상 빅테이터 처리기술을 확보함으로써 작물 표현체 영상 데이터의 정형화를
+                    달성하고, 국제적인 표준화를 선도할 수 있는 기반 구축</p>
+                <p>
+                    ○ 벼 생육 영상데이터 처리기술의 확보를 통해 다양한 작물 표현체로의 확장 비용
+                    감소</p>
+                <p>
+                    ○ 고가의 국외 영상장비 및 해당 소프트웨어 구입비용의 절감 및 국내 관련 장비
+                    및 소프트웨어 생산을 위한 기반 기술확보로 국내 신산업 창출 및 산업활성화 유
+                    도</p>
             </div>
         </div>
     </div>
@@ -94,71 +109,22 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>AWS EC2 </td> <td>t2.micro</td>
-                        <td>maven </td> <td></td>
-                        <td>tess4j </td> <td>4.5.1</td>
+                        <td>Python </td> <td>3.8</td>
+                        <td>OpenCV-python </td> <td>4.4.0.40</td>
+                        <td>matplotlib </td> <td>3.3.0</td>
                     </tr>
                     <tr>
-                        <td>tomcat </td> <td>9.0.31</td>
-                        <td>OpenJDK </td> <td>1.8.0_221</td>
-                        <td>Jackson </td> <td>2.11.0</td>
+                        <td>numpy </td> <td>1.19.1</td>
+                        <td>PyQt5 </td> <td>5.15.0</td>
+                        <td>Bootstrap </td> <td>4</td>
                     </tr>
                     <tr>
-                        <td>Spring </td> <td>5.2.3</td>
-                        <td>MySQL </td> <td>8.0.20</td>
-                        <td>Mybatis </td> <td>3.5.4</td>
-                    </tr>
-                    <tr>
-                        <td>commons-fileupload </td> <td>1.4</td>
-                        <td>commons-io </td> <td>2.5</td>
-                        <td></td> <td></td>
+                        <td>HTML </td> <td>5</td>
+                        <td>CSS </td> <td>3</td>
+                        <td>Node.js Express </td> <td>4</td>
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
-    <div id="section5">
-        <div class="container">
-            <div class="sec5">
-                <h2>프로그램 진척도</h2>
-<!--                <img src="items/img/signboard/Milestone.jpg">-->
-            </div>
-        </div>
-    </div>
-    <div id="section6">
-        <div class="container">
-            <div class="sec76">
-                <h2>System architecture</h2>
-<!--                <img style="height: 90vh" src="items/img/signboard/SignboardArchitecture.png">-->
-            </div>
-        </div>
-    </div>
-    <div id="section7">
-        <div class="container">
-            <div class="sec7">
-                <h2>UseCase Diagram</h2>
-<!--                <img src="items/img/signboard/SignboardUseCase.png">-->
-            </div>
-        </div>
-    </div>
-    <div id="section8">
-        <div class="container">
-            <div class="sec8">
-                <h2>Sequence Diagram (간판 검색시)</h2>
-<!--                <img src="items/img/signboard/SignboardSequence.png">-->
-            </div>
-        </div>
-    </div>
-    <div id="section9">
-        <div class="container">
-            <div class="sec9">
-                <h2>시연 영상</h2> <br>
-                <!--                <iframe title="'jutabi's develop a..'에서 업로드한 동영상" width="960" height="540"-->
-                <!--                        src="https://play-tv.kakao.com/embed/player/cliplink/410047636?service=kakao_tv"-->
-                <!--                        allowfullscreen frameborder="0" scrolling="no" allow="autoplay"></iframe>-->
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/EJKas4CegIs"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
