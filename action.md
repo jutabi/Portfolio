@@ -4,7 +4,6 @@
 <summary>TODO LIST</summary>
 <div markdown="1">
 
-ToDo List
 - (○) 다이어그램 그리기 
 - (○) 블로그에 개발상황 연재하기
 - (○) 스프링 프레임워크 사용
