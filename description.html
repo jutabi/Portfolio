@@ -13,12 +13,13 @@
         }
         table td {
             width: 10vw;
+            text-align: center;
         }
         td:nth-child(odd) {
             background-color: lightseagreen;
         }
         .container div p {
-            width: 80vw;
+            max-width: 80vw;
             text-align: justify
         }
     </style>
@@ -29,7 +30,7 @@
         <li><a href="#"><em>Intro</em></a></li>
         <li><a href="#"><em>Outline</em></a></li>
         <li><a href="#"><em>Action Content</em></a></li>
-        <li><a href="#"><em>Effectiveness</em></a></li>
+<!--        <li><a href="#"><em>Effectiveness</em></a></li>-->
         <li><a href="#"><em>Tools used</em></a></li>
         <li><a href="#"><em>Milestone</em></a></li>
         <li><a href="#"><em>Architecture</em></a></li>
@@ -48,7 +49,7 @@
                 <a href="http://jutabi.com" target="_blank">
                     ->프로젝트 서비스 링크
                 </a> <br>
-                <a href="https://github.com/mckaydev/Signboard" target="_blank">
+                <a href="https://github.com/mckaydev/Sb_public" target="_blank">
                     ->프로젝트 GitHub
                 </a> <br>
                 <a href="https://jutabi.tistory.com/category/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EA%B0%84%ED%8C%90%20%EA%B2%80%EC%83%89%EA%B8%B0%20-%20%EA%B0%9C%EB%B0%9C%20%EC%9D%BC%EC%A7%80" target="_blank">
@@ -60,24 +61,24 @@
     <div id="section1">
         <div class="container">
             <div class="sec1">
-                <h2>프로젝트 개요</h2> <br>
-                <p>가. 추진 목적 및 필요성</p> <br>
-                <p>
-                    TV에서 외국인들이 우리나라에 정착하거나 여행하는 주제를 가진 프로그램들이
-                    많이 나오고 있는데 내용 중에서 애로사항이 되는 것은 한국어를 잘 알지 못하는 외국인들이 가게의
-                    간판을 보고 어떠한 목적을 가진 가게인지를 모른다는 것입니다. 저는 그 문제에서 착안하여 간판
-                    사진을 외국인들이 찍어 업로드하면 그 가게의 정보를 표현해주는 기능을 구현하려고 합니다</p> <br>
-                <p>나. 추진 목표</p> <br>
-                <p>
-                    기본은 웹페이지를 이용하여 사진을 업로드하면 가게의 정보를 제공하는 것이며 어플리케이션으로도
-                    구현하여 오프라인 배달의 민족을 구현하는 것이 목표입니다.</p>
+                <h2>프로젝트 기능</h2> <br>
+                <h4>비회원 사용자</h4> <br>
+                <p>&nbsp; 간판 검색</p>
+                <p>&nbsp; &nbsp; ->간판 사진을 업로드하여 가게의 정보를 검색할 수 있습니다.</p><br>
+                <h4>회원 사용자</h4> <br>
+                <p>&nbsp; 간판 검색</p>
+                <p>&nbsp; &nbsp; ->간판을 검색하고 별점과 한줄평을 작성할 수 있습니다.</p>
+                <p>&nbsp; 검색 기록</p>
+                <p>&nbsp; &nbsp; ->자신이 매긴 별점과 한줄평, 가게 정보를 담고있는 가게 기록을 확인할 수 있습니다.</p>
+                <p>&nbsp; 즐겨찾기</p>
+                <p>&nbsp; &nbsp; ->검색기록을 즐겨찾기에 추가해 맛집 저장 노트로 활용할 수 있습니다.</p>
             </div>
         </div>
     </div>
     <div id="section2">
         <div class="container">
             <div class="sec2">
-                <h2>수행 내용</h2> <br>
+                <h2>수행 내용 (간판 검색시)</h2> <br>
                 <p>
                     1. 이용자가 간판 사진을 업로드 -> 간판의 영역(ROI)을 지정 -> OCR하여 상호명을 추출
                 </p> <br>
@@ -99,24 +100,24 @@
             </div>
         </div>
     </div>
-    <div id="section3">
-        <div class="container">
-            <div class="sec3">
-                <h2>기대 효과</h2> <br>
-                <p>
-                    외국인들 이외에도 국내 여행을 다니는 여행객들도 서비스 이용자에 포함 될 수 있습니다.
-                <p>
-                    점주들에게 로열티를 받고 가게의 상세 정보를 포함하거나 광고를 추가하여 수익창출이 가능합니다.</p>
-                <p>
-                    이용자들의 평점 기능을 추가하여 식사 메뉴를 고민하는 사람들에게 주변의 가게를 소개해줄 수 있습니다.</p>
-            </div>
-        </div>
-    </div>
+<!--    <div id="section3">-->
+<!--        <div class="container">-->
+<!--            <div class="sec3">-->
+<!--                <h2>기대 효과</h2> <br>-->
+<!--                <p>-->
+<!--                    외국인들 이외에도 국내 여행을 다니는 여행객들도 서비스 이용자에 포함 될 수 있습니다.-->
+<!--                <p>-->
+<!--                    점주들에게 로열티를 받고 가게의 상세 정보를 포함하거나 광고를 추가하여 수익창출이 가능합니다.</p>-->
+<!--                <p>-->
+<!--                    이용자들의 평점 기능을 추가하여 식사 메뉴를 고민하는 사람들에게 주변의 가게를 소개해줄 수 있습니다.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div id="section4">
         <div class="container">
             <div class="sec4">
                 <h2>사용한 도구들</h2> <br>
-                <table style="width: 80vw" border="1">
+                <table style="width: 80vw;" border="1">
                     <thead>
                     <tr bgcolor="#add8e6">
                         <th>이름</th> <th>버전</th> <th>이름</th> <th>버전</th> <th>이름</th> <th>버전</th>
@@ -125,18 +126,18 @@
                     <tbody>
                     <tr>
                         <td>AWS EC2 </td> <td>t2.micro</td>
-                        <td>maven </td> <td></td>
+                        <td>tomcat </td> <td>9.0.31</td>
                         <td>tess4j </td> <td>4.5.1</td>
                     </tr>
                     <tr>
-                        <td>tomcat </td> <td>9.0.31</td>
                         <td>OpenJDK </td> <td>1.8.0_221</td>
                         <td>Jackson </td> <td>2.11.0</td>
+                        <td>Spring MVC </td> <td>5.2.3</td>
                     </tr>
                     <tr>
-                        <td>Spring </td> <td>5.2.3</td>
                         <td>MySQL </td> <td>8.0.20</td>
                         <td>Mybatis </td> <td>3.5.4</td>
+                        <td>Spring Security </td> <td>5.2.2</td>
                     </tr>
                     <tr>
                         <td>commons-fileupload </td> <td>1.4</td>
