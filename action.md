@@ -100,6 +100,7 @@
 - 자바는 **OpenJDK 1.8**을 사용합니다.
 - **Spring 프레임워크 MVC**를 사용합니다.
 - **Spring Security 프레임워크**를 사용합니다.
+- **AWS ELB, CM**를 이용하여 SSL 인증서를 발급, 사용합니다.
 - 이미지 ROI(region of interest)지정에는 **https://jcrop.com/** 을 사용합니다.
 - **tess4j**를 이용하여 간판을 OCR합니다.
 - 이미지 EXIF 정보는 **exif-js**를 이용하여 추출합니다. **https://github.com/exif-js/exif-js**
