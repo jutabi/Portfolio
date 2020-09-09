@@ -145,7 +145,7 @@
         <td>PK</td><td>username</td><td>varchar(10)</td>
     </tr>
     <tr>
-        <td></td><td>password</td><td>varchar(10)</td>
+        <td></td><td>password</td><td>varchar(200)</td>
     </tr>
     <tr>
         <td></td><td>email</td><td>varchar(20)</td>
