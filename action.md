@@ -42,11 +42,11 @@
 - (○) 로그인에 Spring Security 적용
 - (○) 예제 이미지 선택 가능
 - (○) SSL 적용
-- (X) 검색기록 페이징
+- (○) 검색기록 페이징
 - ----------------추가 항목----------------
 - (○) 포트폴리오 블로그 생성
 - (○) 개인프로젝트 설명 페이지 작성
-- (X) 실사용자 전용 설명 (Web Page or Video)
+- (○) 실사용자 전용 설명 (Web Page or Video)
 - (○) 이력서 pdf version
 - (f) 북마크, 즐겨찾기 스크롤 위치 저장
 - (X) 하드코딩된 db로그인 정보 암호화
@@ -100,7 +100,6 @@
 - 자바는 **OpenJDK 1.8**을 사용합니다.
 - **Spring 프레임워크 MVC**를 사용합니다.
 - **Spring Security 프레임워크**를 사용합니다.
-- **AWS ELB, CM**를 이용하여 SSL 인증서를 발급, 사용합니다.
 - 이미지 ROI(region of interest)지정에는 **https://jcrop.com/** 을 사용합니다.
 - **tess4j**를 이용하여 간판을 OCR합니다.
 - 이미지 EXIF 정보는 **exif-js**를 이용하여 추출합니다. **https://github.com/exif-js/exif-js**
@@ -145,7 +144,7 @@
         <td>PK</td><td>username</td><td>varchar(10)</td>
     </tr>
     <tr>
-        <td></td><td>password</td><td>varchar(200)</td>
+        <td></td><td>password</td><td>varchar(10)</td>
     </tr>
     <tr>
         <td></td><td>email</td><td>varchar(20)</td>
@@ -250,6 +249,7 @@ ex) 회원 Id가 'test1234' 일 때, 테이블명은 'test1234'
 - '북마크 삭제' 버튼과 '기록 삭제' 버튼이 각각의 기록마다 존재합니다.
 
 ## + 이전 검색 기록과 즐겨찾기
+- 페이징을 적용합니다.
 - '이전 검색 기록' 과 '즐겨찾기' 는 동일한 jsp 뷰 파일로 반환합니다. (priorSearch.jsp)
 - 스프링 컨트롤러 내에서 request mapping을 통해 둘을 구분합니다.
 - 쿠키를 사용하여 현재 사용자가 접속한 기능을 저장합니다.
