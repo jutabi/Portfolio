@@ -24,9 +24,6 @@ $(window).scroll(function(){
     if(wScroll >= contents.eq(0).offset().top){
         nav.removeClass("active");
         nav.eq(0).addClass("active");
-        // for (let i = 0; i < 10; i ++) {
-        //     nav.eq(i).addClass("active");
-        // }
     }
     if(wScroll >= contents.eq(1).offset().top){
         nav.removeClass("active");
