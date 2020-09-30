@@ -21,7 +21,32 @@
                 &emsp;return 0;
             }
         </p>
+        <div>
+            <div class="abcd" id="abcd">
+                <p>div class abcd</p>
+            </div>
+            <abcd>
+                <p>tag name abcd</p>
+            </abcd>
+        </div>
     </div>
+    <script>
+        window.onload = function () {
+            // let ad = document.getElementsByTagName("div");
+            // let ad = document.getElementsByClassName("abcd");
+            // console.log(ad);
+            // console.log(ad.parent);
+            // console.log(ad.parentNode);
+            // ad.style = "display: none";
+            let ad = document.getElementsByClassName("abcd");
+            let ad1 = document.getElementsByTagName("abcd");
+            console.log(ad[0]);
+            console.log(ad1);
+            ad[0].style = "display:none";
+            ad1[0].style = "display:none";
+            // document.getElementById("abcd").style = "display:none";
+        }
+    </script>
 </div>
 </body>
 </html>
